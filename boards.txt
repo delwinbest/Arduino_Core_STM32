@@ -1274,6 +1274,18 @@ LoRa.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
 3dprinter.menu.pnum.VAKE_F446VE.build.variant=VAKE_F446VE
 3dprinter.menu.pnum.VAKE_F446VE.build.cmsis_lib_gcc=arm_cortexM4lf_math
 
+# MKS TFT 28 v4
+3dprinter.menu.pnum.MKSTFT_F107VC=MKS TFT28_32 V4
+3dprinter.menu.pnum.MKSTFT_F107VC.upload.maximum_size=262144
+3dprinter.menu.pnum.MKSTFT_F107VC.upload.maximum_data_size=60032
+3dprinter.menu.pnum.MKSTFT_F107VC.build.flash_offset=0x7000
+3dprinter.menu.pnum.MKSTFT_F107VC.build.startup_file=-DCUSTOM_STARTUP_FILE
+3dprinter.menu.pnum.MKSTFT_F107VC.build.build.ldscript=ldscript.ld
+3dprinter.menu.pnum.MKSTFT_F107VC.build.board=MKSTFT_F107VC
+3dprinter.menu.pnum.MKSTFT_F107VC.build.series=STM32F1xx
+3dprinter.menu.pnum.MKSTFT_F107VC.build.product_line=STM32F107xC
+3dprinter.menu.pnum.MKSTFT_F107VC.build.variant=MKSTFT_F107VC
+
 # Upload menu
 3dprinter.menu.upload_method.swdMethod=STM32CubeProgrammer (SWD)
 3dprinter.menu.upload_method.swdMethod.upload.protocol=0
@@ -1289,6 +1301,7 @@ LoRa.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
 3dprinter.menu.upload_method.dfuMethod.upload.protocol=2
 3dprinter.menu.upload_method.dfuMethod.upload.options=-g
 3dprinter.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
+
 
 
 ###############################
