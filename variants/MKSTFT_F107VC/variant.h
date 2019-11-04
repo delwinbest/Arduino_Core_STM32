@@ -82,7 +82,7 @@ extern "C" {
 #define PC8 37//LCD CS
 #define PC5 38//Touch IRQ
 #define PD11 39 //SDCARD Chip Select
-#define PD15 40//LCD_RD 
+#define PD12 40//LCD_RD  this was PD15, seems to be a typo
 #define PC12 41//unknown yet
 
 
@@ -141,7 +141,7 @@ extern "C" {
 #define PIN_SPI_MISO            PB14
 #define PIN_SPI_SCK             PB13
 /*
- *  #define SDCARD_nCS_Pin          GPIO_PIN_11
+ #define SDCARD_nCS_Pin          GPIO_PIN_11
  #define SDCARD_nCS_GPIO_Port    GPIOD
  #define SDCARD_DETECT_Pin       GPIO_PIN_15
  #define SDCARD_DETECT_GPIO_Port GPIOB
@@ -176,14 +176,14 @@ extern "C" {
 #define FLASH_nCS_GPIO_Port     GPIOB
 */
 //#define MAIN_PR_OFFSET 0x8000
-//#define HSE_VALUE               25000000U /*!< Default value of the External oscillator in Hz.*/
+//#define HSE_VALUE               25000000U //< Default value of the External oscillator in Hz.
 //#define VECT_TAB_SRAM 1
 /*
 VECT_TAB_OFFSET
 VECT_TAB_SRAM
-  SCB->VTOR = SRAM_BASE | VECT_TAB_OFFSET; /* Vector Table Relocation in Internal SRAM. 
+  SCB->VTOR = SRAM_BASE | VECT_TAB_OFFSET; // Vector Table Relocation in Internal SRAM. 
 #else
-  SCB->VTOR = FLASH_BASE | VECT_TAB_OFFSET; /* Vector Table Relocation in Internal FLASH. *
+  SCB->VTOR = FLASH_BASE | VECT_TAB_OFFSET; // Vector Table Relocation in Internal FLASH. 
 #endif
 
 */

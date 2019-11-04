@@ -1302,7 +1302,13 @@ LoRa.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
 3dprinter.menu.upload_method.dfuMethod.upload.options=-g
 3dprinter.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
 
-
+3dprinter.menu.upload_method.dfuoMethod=Maple DFU Bootloader original
+3dprinter.menu.upload_method.dfuoMethod.upload.protocol=maple
+3dprinter.menu.upload_method.dfuoMethod.upload.tool=maple_upload
+3dprinter.menu.upload_method.dfuoMethod.upload.usbID=1EAF:0003
+3dprinter.menu.upload_method.dfuoMethod.upload.altID=1
+3dprinter.menu.upload_method.dfuoMethod.build.flash_offset=0x7000
+3dprinter.menu.upload_method.dfuoMethod.build.bootloader_flags=-DBL_LEGACY_LEAF -DVECT_TAB_OFFSET={build.flash_offset}
 
 ###############################
 # Genericflight Flight Controllers
